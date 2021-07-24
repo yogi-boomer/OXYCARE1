@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OXYCARE">
-        <activity android:name=".screens.patientAnalisis"></activity>
-        <activity android:name=".screens.patientRegist" />
-        <activity android:name=".screens.patientInformation" />
-        <activity android:name=".screens.patientList" />
-        <activity android:name=".screens.patientScreen" />
-        <activity android:name=".screens.doctorScreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".pagesOxy.ui.myAnalysisPage_Oxy"></activity>
+        <activity android:name=".pagesOxy.ui.editProfile_Oxy" />
+        <activity android:name=".pagesOxy.ui.historyPage_Oxy" />
+        <activity android:name=".pagesOxy.ui.sensorListPage_Oxy" />
+        <activity android:name=".pagesOxy.ui.recoberPass_Oxy" />
+        <activity android:name=".pagesOxy.ui.profilePage_Oxy" />
+        <activity android:name=".pagesOxy.ui.registPage_Oxy" />
+        <activity android:name=".pagesOxy.ui.menu_Oxy" />
+        <activity android:name=".pagesOxy.loginPage_Oxy">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
