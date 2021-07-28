@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OXYCARE">
-        <activity android:name=".pagesOxy.ui.myAnalysisPage_Oxy"></activity>
+        <activity android:name=".pagesOxy.ui.infoPersonal_Oxy"></activity>
+        <activity android:name=".pagesOxy.ui.myAnalysisPage_Oxy" />
         <activity android:name=".pagesOxy.ui.editProfile_Oxy" />
         <activity android:name=".pagesOxy.ui.historyPage_Oxy" />
         <activity android:name=".pagesOxy.ui.sensorListPage_Oxy" />

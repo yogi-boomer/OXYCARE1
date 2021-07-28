@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
     tools:context=".pagesOxy.ui.menu_Oxy">
 
     <androidx.fragment.app.FragmentContainerView
@@ -19,14 +20,13 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-        app:menu="@menu/bottom_nav_menu"
+        android:background="#464646"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

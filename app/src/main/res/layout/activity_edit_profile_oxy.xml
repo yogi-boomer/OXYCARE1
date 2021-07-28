@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg_app"
     tools:context=".pagesOxy.ui.editProfile_Oxy">
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,21 +18,30 @@
             android:id="@+id/btnMenuP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="menu"/>
+            android:text="Inicio"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="#464646" />
         <Button
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:id="@+id/btnMisAnalisisP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="mis analisis"/>
+            android:text="Mis análisis"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="#464646" />
         <Button
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:id="@+id/btnPerfilP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="perfil"/>
+            android:text="Perfil"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="#464646" />
     </LinearLayout>
     <TextView
         android:gravity="center"
@@ -44,8 +54,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
-        app:cardBackgroundColor="#70D188"
-        app:cardCornerRadius="20dp">
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -57,7 +68,10 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Editar información"/>
+                    android:text="Editar información"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:backgroundTint="#464646"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -238,7 +252,10 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Guardar y salir."/>
+                    android:text="Guardar y salir"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:backgroundTint="#464646"/>
             </LinearLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>

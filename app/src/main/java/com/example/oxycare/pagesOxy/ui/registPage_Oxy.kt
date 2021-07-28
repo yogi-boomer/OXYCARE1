@@ -11,18 +11,16 @@ class registPage_Oxy : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_regist_page_oxy)
-        btnTerminar.setOnClickListener {
-            btnPress()
-        }
-        btnSalir.setOnClickListener {
+
+        //Button
+        btnMoreInfo.setOnClickListener {
             btnPress()
         }
 
     }
     private fun btnPress(){
-        val intent: Intent = Intent(this, menu_Oxy::class.java)
+        val intent: Intent = Intent(this, infoPersonal_Oxy::class.java)
         startActivity(intent)
     }
-
 
 }

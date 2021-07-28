@@ -3,16 +3,19 @@
 
     <item
         android:id="@+id/navigation_home"
+        android:state_pressed="true"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="Inicio" />
 
     <item
         android:id="@+id/navigation_myAnalysis"
+        android:state_pressed="true"
         android:icon="@drawable/ic_baseline_assignment_24"
-        android:title="Mis analisis" />
+        android:title="Mis análisis" />
 
     <item
         android:id="@+id/navigation_profile"
+        android:state_pressed="true"
         android:icon="@drawable/ic_baseline_account_circle"
         android:title="Perfil" />
 

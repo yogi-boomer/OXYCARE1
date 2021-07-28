@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg_app"
     tools:context=".pagesOxy.ui.historyPage_Oxy">
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,21 +18,30 @@
             android:id="@+id/btnMenuH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="menu"/>
+            android:text="Inicio"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="#464646" />
         <Button
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:id="@+id/btnMisAnalisisH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="mis analisis"/>
+            android:text="Mis análisis"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="#464646" />
         <Button
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:id="@+id/btnPerfilH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="perfil"/>
+            android:text="Perfil"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="#464646" />
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"

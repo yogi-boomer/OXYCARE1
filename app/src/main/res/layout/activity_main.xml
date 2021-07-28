@@ -4,31 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
     tools:context=".pagesOxy.loginPage_Oxy">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <ImageView
+        android:id="@+id/bg_wave"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/wave" />
+
+    <ImageView
+        android:id="@+id/logotipo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@drawable/oxy"
-        android:paddingTop="20dp"/>
+        android:paddingTop="20dp"
+        app:srcCompat="@drawable/logotipo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/ic_user"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:drawablePadding="8dp"
+            android:hint="Usuario"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="@color/black"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/ic_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:hint="Contraseña"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingresar"
         android:layout_gravity="center"
-        android:layout_margin="20dp"/>
+        android:layout_margin="35dp"
+        android:textAllCaps="false"
+        android:text="Iniciar Sesión"
+        android:textSize="20sp"
+        android:backgroundTint="#49aaf9"
+        app:cornerRadius="20dp"/>
 
     <Button
         android:id="@+id/btnRegistrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Registrate" />
+        android:textAllCaps="false"
+        android:text="Registrarse"
+        android:textSize="16sp"
+        android:textColor="#464646"
+        android:background="@android:color/transparent"/>
+
 </LinearLayout>
 </ScrollView>

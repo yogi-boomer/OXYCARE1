@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient"
-    tools:context=".pagesOxy.ui.registPage_Oxy">
+    tools:context=".pagesOxy.ui.infoPersonal_Oxy">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,9 +37,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            app:cardCornerRadius="20dp"
             app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="20dp"
             app:cardElevation="10dp">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -52,18 +53,19 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:padding="20dp"
-                    android:text="Por favor proporciona tu información general"
+                    android:text="Por favor proporciona tu información personal"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
+                    android:hint="Género"
                     app:startIconDrawable="@drawable/ic_user"
                     app:boxCornerRadiusTopStart="20dp"
                     app:boxCornerRadiusTopEnd="20dp"
@@ -71,15 +73,14 @@
                     app:boxCornerRadiusBottomEnd="20dp"
                     app:boxStrokeColor="@color/black">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txtNombre"
+                    <AutoCompleteTextView
+                        android:id="@+id/txtGenero"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#FFFFFF"
-                        android:drawablePadding="8dp"
-                        android:hint="Nombre(s)"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
+                        android:enabled="false"
+                        android:inputType="none"
+                        android:textColor="#000000"/>
+
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -89,7 +90,34 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     android:layout_marginTop="5dp"
-                    app:startIconDrawable="@drawable/ic_user"
+                    app:startIconDrawable="@drawable/ic_calendar"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxStrokeColor="@color/black">
+
+                    <EditText
+                        android:id="@+id/txtFecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:backgroundTint="#FFFFFF"
+                        android:drawablePadding="8dp"
+                        android:textColor="#000000"
+                        android:text="Fecha de nacimiento"
+                        android:clickable="false"
+                        android:focusable="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="5dp"
                     app:boxCornerRadiusTopStart="20dp"
                     app:boxCornerRadiusTopEnd="20dp"
                     app:boxCornerRadiusBottomStart="20dp"
@@ -97,12 +125,12 @@
                     app:boxStrokeColor="@color/black">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txtPaterno"
+                        android:id="@+id/txtAltura"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="#FFFFFF"
                         android:drawablePadding="8dp"
-                        android:hint="Apellido Paterno"
+                        android:hint="Altura"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -114,7 +142,6 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     android:layout_marginTop="5dp"
-                    app:startIconDrawable="@drawable/ic_user"
                     app:boxCornerRadiusTopStart="20dp"
                     app:boxCornerRadiusTopEnd="20dp"
                     app:boxCornerRadiusBottomStart="20dp"
@@ -122,12 +149,12 @@
                     app:boxStrokeColor="@color/black">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txtMaterno"
+                        android:id="@+id/txtPeso"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="#FFFFFF"
                         android:drawablePadding="8dp"
-                        android:hint="Apellido Materno"
+                        android:hint="Peso"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -139,7 +166,7 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     android:layout_marginTop="5dp"
-                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconDrawable="@drawable/ic_note"
                     app:boxCornerRadiusTopStart="20dp"
                     app:boxCornerRadiusTopEnd="20dp"
                     app:boxCornerRadiusBottomStart="20dp"
@@ -147,77 +174,25 @@
                     app:boxStrokeColor="@color/black">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txtCorreo"
+                        android:id="@+id/txtPadecimientos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="#FFFFFF"
                         android:drawablePadding="8dp"
-                        android:hint="Correo electrónico"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginTop="5dp"
-                    app:startIconDrawable="@drawable/ic_password"
-                    app:boxCornerRadiusTopStart="20dp"
-                    app:boxCornerRadiusTopEnd="20dp"
-                    app:boxCornerRadiusBottomStart="20dp"
-                    app:boxCornerRadiusBottomEnd="20dp"
-                    app:boxStrokeColor="@color/black"
-                    app:endIconMode="password_toggle">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txtPassword"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#FFFFFF"
-                        android:drawablePadding="8dp"
-                        android:hint="Contraseña"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginTop="5dp"
-                    app:startIconDrawable="@drawable/ic_password"
-                    app:boxCornerRadiusTopStart="20dp"
-                    app:boxCornerRadiusTopEnd="20dp"
-                    app:boxCornerRadiusBottomStart="20dp"
-                    app:boxCornerRadiusBottomEnd="20dp"
-                    app:endIconMode="password_toggle"
-                    app:boxStrokeColor="@color/black">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txtPasswordC"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#FFFFFF"
-                        android:drawablePadding="8dp"
-                        android:hint="Confirmar Contraseña"
+                        android:hint="Padecimientos"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
-                    android:id="@+id/btnMoreInfo"
+                    android:id="@+id/btnTerminar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:textAllCaps="false"
-                    android:text="Continuar"
+                    android:text="Registrarse"
                     android:textSize="20sp"
                     android:backgroundTint="#49aaf9"
                     app:cornerRadius="20dp"/>
