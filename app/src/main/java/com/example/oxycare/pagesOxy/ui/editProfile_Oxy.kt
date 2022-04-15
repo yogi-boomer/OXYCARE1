@@ -26,8 +26,6 @@ class editProfile_Oxy : AppCompatActivity() {
         startActivity(intent)
     }
     private fun btnPress2(){
-        val intent: Intent = Intent(this, myAnalysisPage_Oxy::class.java)
-        startActivity(intent)
     }
     private fun btnPress3(){
         val intent: Intent = Intent(this, profilePage_Oxy::class.java)
